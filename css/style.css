@@ -1,0 +1,362 @@
+/* CSS from main styles */
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
+*/
+
+/* ------------------------------------------
+// OUTER STRUCTURE
+----------------------------------------- */
+body{ margin: 0; padding:0; font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; }
+body > iframe{ display: none; }
+
+
+/* ------------------------------------------
+// TYPOGRAPHY
+----------------------------------------- */
+p{ margin: 0 0 10px; }
+p, li{ line-height: 17px; }
+h1,h2,h3{ -webkit-text-shadow: 0 0 1px rgba(0,0,0,0.3); }
+h1{ font-family: 'ITC American Typewriter W02', sans-serif; font-size: 40px; font-weight: normal; }
+h2{ font-family: 'ITC American Typewriter W02', sans-serif; font-size: 25px; font-weight: normal; color: #002596; }
+h3{ font-family: 'ITC American Typewriter W02', sans-serif; font-size: 20px; font-weight: normal; color: #002596; }
+sup {line-height: initial}
+q { font-weight:bold; }
+q:before, q:after { font-weight:normal; font-size:1.5em; }
+
+.callus{ color: #5d7588; font-size: 14px; }
+.phone{ font-size: 16px; font-weight: bold; display: inline; white-space: nowrap; }
+
+a{ color: #002596; text-decoration: none; transition:all .2s ease-in-out; -webkit-transition:all .2s ease-in-out; -moz-transition:all .2s ease-in-out; -ms-transition:all .2s ease-in-out; -o-transition:all .2s ease-in-out; zoom: 1; }
+a:hover{ text-decoration: underline; }
+.smlh2 h2 {font-size: 16px}
+
+/* ------------------------------------------
+// MISC STYLES
+----------------------------------------- */
+.clear{ clear: both; line-height: 0; height: 0; display: block; }
+.clearfix:after, .subheading:after, dl:after{ visibility: hidden; display: block; font-size:0; content:"."; clear: both; height:0; color: #fff; }
+* html .clearfix{ height: 1%; } /* IE6 */
+*:first-child+html .clearfix{ display: inline-block; } /* IE7 */
+.fright{ float: right; }
+.fleft{ float: left; }
+img{ border:0 !important;  }
+.calign{ text-align: center; }
+.lalign{ text-align: left; }
+.ralign{ text-align: right; }
+.hidden{ display: none;}
+
+.imgholder{ width: 119px; height: 83px; border: 1px solid #002596;display: block; margin-bottom: 5px; }
+.imgholder img{ display: block; }
+
+.indent-40{ margin: 10px 40px; }
+.arial{ font-family: Arial, Helvetica, sans-serif !important; }
+.styleimg{
+	padding: 7px; border: 1px solid #94a9b4; background: #EDF1F3; display: block; position: relative;
+	border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px;
+	behavior: url(/assets-new/PIE.htc);
+}
+.summer-image-right{float: right;  padding: 0 0 10px 16px;}
+
+/* ------------------------------------------
+// HEADER / FOOTER
+----------------------------------------- */
+#header, #footer{ background-color: #f0f0f0; }
+#header, .menuHolder{ width: 980px; margin: 0 auto; }
+
+#header{ overflow: hidden; background: #fff; z-index: 402; }
+#header #innerheader{ padding-bottom: 15px; position: relative; min-height: 63px; overflow: hidden; }
+#header > div{ width: 980px; margin: 0 auto; text-align: left; }
+#header .sharing{ width: 500px; text-align: center; margin: 25px auto 0; }
+#header .site_search{ position: absolute; top: 0; right: 20px; padding-top: 10px; }
+#header .site_search div{ position: relative; }
+#header .site_search .search_text{ padding: 3px; padding-left: 30px; margin:0; }
+#header .site_search .search_btn{ background: url('../images/core/search-icon.gif') no-repeat 2px center; text-indent: -99999px; position: absolute; top:0; left:4px; border:0; width: 25px; height: 25px; border-right: 1px solid #ccc; }
+#header .site_search .search_btn:hover{ cursor: pointer; }
+
+#header .site_search ul{ overflow: hidden; padding:0; list-style-type: none; text-align: right; margin: 10px 0 5px; }
+#header .site_search ul li{ display: inline-block; border-left: 1px solid #606060; padding: 0 5px 0 8px; }
+.ie6 #header .site_search ul, .ie7 #header .site_search ul{ float: right; }
+.ie6 #header .site_search ul li, .ie7 #header .site_search ul li{ float: left; }
+#header .site_search ul li:first-child{ border:0; }
+#header .site_search ul a{ color: #606060; font-width: bold; }
+
+.ie #header .site_search div.phone{ position: absolute; bottom:-20px; right:0; }
+#header .site_search .phone p{ font-size: 25px; font-weight: bold; color: #002596; padding:0; margin:0; line-height: 19px; }
+
+#header #companylogo{ position: absolute; top: 10px; left:20px; }
+
+#footer{
+	background-color: #e6e6e6; color: #464646; padding-bottom: 15px; border-top: 1px solid #b8b8b8;
+	box-shadow: inset 0 5px 10px #ccc; -webkit-box-shadow: inset 0 5px 10px #ccc; -moz-box-shadow: inset 0 5px 10px #ccc; -ms-box-shadow: inset 0 5px 10px #ccc; -o-box-shadow: inset 0 5px 10px #ccc;
+}
+#footer > div{ width: 980px; margin: 0 auto; text-align: left; padding-top: 15px; }
+#footer .footer_nav{ border-top: 1px dashed #ccc; overflow:hidden; margin:15px 0 15px; padding:0; list-style-type: none; }
+#footer .footer_nav li{ display: inline-block; margin-top: 10px; }
+.ie7 #footer .footer_nav li{ float: left; }
+#footer .footer_nav li a{ color: #002596; }
+
+#footer .bigfooter-links, #footer .bigfooter-links ul{ list-style-type: none; margin:0; padding:0; overflow: hidden; color: #002596; }
+#footer .bigfooter-links a{ font-size: 11px; color: #424242; }
+#footer .bigfooter-links > li{ float: left; width: 15%; margin-right: 6px; }
+#footer .bigfooter-links > li > a, #footer .bigfooter-links > li > .a{ background: url('../images/core/footer-pawsm.png') no-repeat left 0; padding-left: 20px; text-transform: uppercase; font-size: 16px; color: #002596; font-weight: bold; margin-bottom: 8px; display: block; }
+#footer .bigfooter-links > li:last-child, #footer .bigfooter-links > li.li_help{ width: 11%; margin-right:0; }
+#footer .bigfooter-links > li.li_claims{ width: 11%; }
+#footer .bigfooter-links > li.li_aboutus{ width: 14%; }
+.ie7 #footer .bigfooter-links > li.li_aboutus, .ie8 #footer .bigfooter-links > li.li_aboutus{ width: 13%; }
+.ie8 #footer .bigfooter-links > li.li_help{ width: 10%; }
+
+#footer .bigfooter-links ul{
+	margin-left: 20px;
+}
+#footer .bigfooter-links ul a{ display: block; padding: 2px 0; }
+
+#footer .footer_ver_logo{ float: right; width: 30%; text-align: right; }
+#footer .social_media{ list-style-type: none; margin:0; padding:0; overflow: hidden; float: right; margin-bottom: 30px; }
+#footer .social_media li:first-child{ margin:0; }
+#footer .social_media li{ float: left; margin-left: 20px; }
+#footer .social_media li a{ line-height: 25px; font-weight: bold; }
+
+#footer #copyright{ float: left; width: 69%; }
+#footer .smallprint{ color: #666666; font-size: 12px; }
+
+/*#footer.nonav > div{ padding-top: 0; }*/
+#footer.nonav{  }
+#footer.nonav .footer_nav{ border:0; }
+
+
+
+/* ------------------------------------------
+// MAIN SITE STRUCTURE
+----------------------------------------- */
+#content{ background: #fff; width: 980px; margin: 0 auto; text-align: left; }
+
+#left, #right{ width: 180px; margin-top: 30px; background: #fff; }
+#left{
+	background: url('../images/core/leftcolumn-overlay.gif') repeat top left;
+	left:0; float:left; z-index: 50; border: 1px solid #bfcad1; border-width: 1px 0 1px 1px; overflow: hidden;
+	border-radius: 0 10px 0 0; -webkit-border-radius: 10px 0 0 0; -moz-webkit-border-radius: 10px 0 0 0; -ms-webkit-border-radius: 10px 0 0 0; -o-webkit-border-radius: 10px 0 0 0;
+}
+.ie7 #left, .ie8 #left{ behavior: url(/assets-new/PIE.htc); }
+
+#right{ right:0; float:right; }
+#right .inner{ padding: 10px; }
+
+#centre{ overflow: hidden; border: 1px solid #8f999e; border-width: 0 1px; z-index: 49;
+	box-shadow: 0 0 10px #b8b8b8; -webkit-box-shadow: 0 0 10px #b8b8b8; -moz-box-shadow: 0 0 10px #b8b8b8; -ms-box-shadow: 0 0 10px #b8b8b8; -o-box-shadow: 0 0 10px #b8b8b8;
+	behavior: url(/assets-new/PIE.htc);
+}
+#centre .inner{ overflow: hidden; height: 1%; padding: 20px 10px 20px 10px; }
+
+/* Class based structure */
+.left, .right{ width: 30%; }
+.left{ left:0; float:left; z-index: 50; }
+.right{ right:0; float:right; z-index: 51; }
+.centre{ overflow: hidden; z-index: 49; }
+.centre .inner{ overflow: hidden; height: 1%; }
+
+div[class~="fixedwidth"]{ width: 980px; margin: 0 auto; border: 1px solid #000; text-align: left;}
+
+
+
+
+/* ------------------------------------------
+// ICONS
+----------------------------------------- */
+span.icon{ display: block; width: 25px; height: 25px; background: url('../images/icons-social.gif') no-repeat -2px -2px; float: left; vertical-align: middle; margin-right: 5px; }
+span.social-twitter{ background-position: -2px 0; }
+span.social-facebook{ background-position: -36px 0; width: 15px; }
+span.social-youtube{ background-position: -62px 0; }
+
+.icon-close{ font-weight: bold; }
+
+
+
+
+
+/* ------------------------------------------
+// COOKIE MESSAGE
+----------------------------------------- */
+.cookiemessage{ background-color: #f7e792; color: #000; overflow: hidden; text-align: center; }
+.cookiemessage p{ margin:0; line-height: 28px; font-size: 11px; }
+.cookiemessage a{ color: #000; text-decoration: underline; margin-left: 10px; }
+.cookiemessage a:hover{ text-decoration: none; }
+.cookiehide{ display: none; }
+
+
+
+/* ------------------------------------------
+// BUTTONS
+----------------------------------------- */
+
+a.button, span.button, .bluetext a{ cursor:pointer;
+	font-family: 'ITC American Typewriter W02', sans-serif; background: #81bc00; color: #fff; padding: 10px 20px; text-align: center; display: inline-block; z-index: 5;
+	border-radius: 7px; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; text-decoration: none; font-size: 21px;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.4); -webkit-text-shadow: 0 -1px 1px rgba(0,0,0,0.4); -moz-text-shadow: 0 -1px 1px rgba(0,0,0,0.4); -ms-text-shadow: 0 -1px 1px rgba(0,0,0,0.4); -o-text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+	box-shadow: 0 1px 0 #7e7e7e; -webkit-box-shadow: 0 1px 0 #7e7e7e; -moz-box-shadow: 0 1px 0 #7e7e7e; -ms-box-shadow: 0 1px 0 #7e7e7e; -o-box-shadow: 0 1px 0 #7e7e7e;
+	transition:all .1s ease-in-out; -webkit-transition:all .1s ease-in-out; -moz-transition:all .1s ease-in-out; -ms-transition:all .1s ease-in-out; -o-transition:all .1s ease-in-out;
+}
+.ie6 a.button, .ie7 a.button, .ie8 a.button, .ie6 .bluetext a, .ie7 .bluetext a, .ie8 .bluetext a, .ie6 span.button, .ie7 span.button, .ie8 span.button{ behavior: url(/assets-new/PIE.htc); position:relative; }
+a.getaquotenow{ font-size: 16px; margin: 15px 0; padding:10px; display: block; }
+
+a[class~="cookie_button"], a[class~="buttonplain"]{
+	text-shadow:none; font-size: inherit; line-height: normal; box-shadow: none; background: #ccc; padding: 2px 5px; color: #000; font-family: Arial, Helvetica, sans-serif !important;
+	border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px;
+}
+
+a.closecookie{ background-image: url('../images/close-btnicon.gif'); background-repeat: no-repeat; background-position: right center; padding-right: 15px; }
+a.icon-close{ background-color: #ccc; background-position: right top; padding: 5px !important; }
+.ie a.closecookie{ behavior: url(/assets-new/PIE.htc); }
+
+
+/* ------------------------------------------
+// GLOBAL BUTTON HOVER STYLE IF NONE SET AFTER
+----------------------------------------- */
+a:hover.button, span:hover.button, .bluetext a:hover{ background-color: #8ecf00; color: #fff; background-position: 0 -50px; }
+
+/* ------------------------------------------
+// OVERRIDE GLOBAL BUTTON HOVER STYLING HERE
+----------------------------------------- */
+/*a:hover.blue-btn{ background: #3d589f; color: #fff; }*/
+a:hover[class~="cookie_button"], a:hover[class~="buttonplain"]{ background-color: #ccc; color: #000; }
+a:hover.closecookie{ background-image: url('../images/close-btnicon.gif'); background-repeat: no-repeat; background-position: right center; padding-right: 15px; }
+a:hover.icon-close{ background-color: #aaa; }
+
+#footer a.cookie_button{ behavior: url(/assets-new/PIE.htc); position:relative; border: 1px solid #cccccc; background: url('../images/cookiebtnbg.gif') repeat-x top left; height: auto; line-height: normal; font-weight: normal; }
+#footer a.cookie_button span{ background: url('../images/cookiebtnarrow.gif') no-repeat center left; display: block; padding-left: 6px; position: relative; right: auto; width: auto; height: auto; }
+#footer a:hover.cookie_button{ background: #ccc; }
+
+a:hover[href$=".pdf"]{ background-position: 5px 5px;  }
+
+
+/* ------------------------------------------
+// LANDING PAGES
+----------------------------------------- */
+#species-landing{  }
+#species-landing h1{ color: #002596; font-size: 50px; }
+#species-landing #right{ width: 275px; height: 100%; margin:0; padding-bottom: 10px; background: #c1d6e2; position: relative; }
+#species-landing #right .inner{ padding:115px 0 0; text-align: center; overflow: hidden; }
+#species-landing #right .inner img{ display: block; margin: 0 auto;margin-bottom: 10px }
+#species-landing #centre{
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; border:0;
+}
+#species-landing #footer{ margin:0; }
+#species-landing #centre p{ margin:0; }
+
+
+#species-landing .ticklist{ font-weight: bold; margin-left: 20px; width: 85%; }
+#species-landing .ticklist li{ color: #162756; font-size: 16px; margin: 2px 0; }
+#species-landing #centre .needquote-btn{ margin: 0 auto; font-size: 40px; padding: 16px 40px; margin-bottom: 20px; }
+#species-landing #centre .needquote-btn + p{ color: #162756; font-size: 16px; font-weight: bold; margin-bottom: 20px; }
+#species-landing #centre .btn-third{ margin: 0 auto; padding: 5px 15px; margin-bottom: 20px; }
+@media (min-width:478px){
+	#species-landing #centre .btn-third{font-size: 30px;}
+}
+
+#species-landing #deserves_petplan {font-family: 'ITC American Typewriter W02', sans-serif; font-size: 18px; margin-left: 5px; padding-right: 40px; padding-top: 3px; text-align: right; color: #002596; position: absolute; bottom: 40px; right:50px;}
+#species-landing #deserves_petplan .flash{ width: 132px; z-index: 100 !important; height: 80px; display: block; position: absolute; bottom:-35px; right:-45px; overflow: hidden; padding-top: 20px; }
+.ie #species-landing #deserves_petplan .flash{height: 100px;bottom:-55px; }
+#species-landing #deserves_petplan .flash span{ background: url('../images/hero-flash-icons.png') no-repeat top right; display: block; width: 70%; height: 100%; position: absolute; top:0; right:0; z-index: 100; }
+#species-landing .headerlogo{float: right; }
+
+
+/* New styles */
+
+.parsley-error-message {
+	background-color: #FCF5F5;
+	border: 1px solid #EDD5D5;
+	color: #914949;
+	padding: 5px;
+	margin: 5px 0 5px 0;
+    list-style: none;
+}
+
+.parsley-error {
+	border: 2px solid darkred!important;
+	background-color: #F5DFDF!important;
+}
+ul.parsley-errors-list {padding:5px 0}
+ul.parsley-errors-list li {list-style: none}
+#species-landing h1 {
+	font-family: 'ITC American Typewriter W02', sans-serif;
+	font-size: 46px;
+	}
+#header {
+	width: auto;
+	background: none;
+}
+#header-lp {
+    background: url('../images/lp-header.png') repeat-x;
+    height:111px;
+    width: 100%;
+    z-index: 1;
+    position: relative;		    
+}
+#header-lp #header #innerheader {
+    padding: 0;
+    height: 111px;
+    width: auto;
+}
+#header-lp #companylogo{
+	padding-top: 28px
+}
+.container {
+	    margin-top: -12px; z-index: 0;
+	}
+.form-horizontal .control-label {
+    margin-bottom: 0;
+    padding-top: 0;
+    line-height:34px;
+  }	
+.textarea {padding-bottom: 15px}
+  
+.ie8 .container {width: 970px;}
+.ie8 #footer .inner .social{text-align: right}
+
+@media (max-width:479px){
+	#species-landing #centre .needquote-btn {font-size: 1.5em}
+	#species-landing h1 {font-size: 2em}
+	#footer .social_media li {
+	    float: none;margin-left: 0;
+	}
+	#footer .social_media li a {
+	    float: left;
+	    margin-bottom: 5px;
+	}
+	
+}
+@media (min-width:768px){
+	#footer .inner .social{text-align: right}
+}
+@media (max-width:767px){
+	span.icon {
+	    width: 25px;
+	}
+	#footer .social img {
+	    float: right;
+	}
+	#footer .social_media li a {
+	    float: left;
+	}
+	
+}
+@media (min-width: 480px) and (max-width: 991px){
+	#footer .social_media {margin-top: 20px}					
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.container {
+	    width: auto; 
+	}
+}
+@media (max-width: 991px){
+	#footer > div {width: auto}
+	#footer .inner .social {
+	    margin-top: 10px;
+	}				
+	#footer .social_media {
+		float: left;
+	}			
+	#header-lp #companylogo{left:0;}			
+}
