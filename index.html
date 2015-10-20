@@ -2,37 +2,34 @@
 <head>
 <title></title>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet" type="text/css" />
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 <script src="js/parsley.js" type="text/javascript"></script>	
 </head>
 <body>
 <div class="container">
-			<div class="textarea">
-				<h1>Postcode Checker</h1>
-				<p>Please enter your postcode below.</p>
-				<br>
-				<form id="postcodeCheck" name="postcodeCheck" class="form form-horizontal">
-
-					<!-- THIS IS A DEMO FOR YOU TO TRIGGER YOURSELVES FROM THE LOOKUP SERVICE -->
-					<div class="parsley-error-message" id="parsley-error-message" style="display:none">
-							<p>Your postcode could not be recognised. Please try again.</p>
-					</div>
-
-					<div class="form-group postcode_field">
-						<label class="control-label col-sm-2 col-xs-3" for="PostCode"> Postcode</label>
-						<div class="col-sm-10 col-xs-9">
-							<input type="text" class="postcode_field form-control" name="PostCode" id="PostCode" value="" maxlength="8" onpaste="return false;" data-parsley-required="true" data-parsley-required-message="Please enter your postcode" data-parsley-postcode="true" data-parsley-postcode-message="Please enter a valid postcode" data-parsley-priority-enabled="true" data-parsley-trigger="change blur keypress">
-						</div>
-					</div>			
-					<div class="form-group">
-						<div class="col-xs-6 col-xs-offset-3 col-md-offset-3 col-md-6">
-							<a id="btnFindAddress" class="button btn-third submit btn btn-block" name="btnFindAddress" href="javascript:void(0);">Sign in</a>
-						</div>
-					</div>
-				</form>							
+	<div class="textarea">
+		<h1>Postcode Checker</h1>
+		<p>Please enter your postcode below.</p>
+		<br>
+		<form id="postcodeCheck" name="postcodeCheck" class="form form-horizontal">
+			<div class="parsley-error-message alert alert-danger" id="parsley-error-message" style="display:none">
+					<p>Your postcode could not be recognised. Please try again.</p>
 			</div>
+
+			<div class="form-group postcode_field">
+				<label class="control-label col-sm-2 col-xs-3" for="PostCode"> Postcode</label>
+				<div class="col-sm-10 col-xs-9">
+					<input type="text" class="postcode_field form-control" name="PostCode" id="PostCode" value="" maxlength="8" onpaste="return false;" data-parsley-required="true" data-parsley-required-message="Please enter your postcode" data-parsley-postcode="true" data-parsley-postcode-message="Please enter a valid postcode" data-parsley-priority-enabled="true" data-parsley-trigger="change blur keypress">
+				</div>
+			</div>			
+			<div class="form-group">
+				<div class="col-xs-6 col-xs-offset-3 col-md-offset-3 col-md-6">
+					<a id="btnFindAddress" class="button btn-third submit btn btn-block" name="btnFindAddress" href="javascript:void(0);">Sign in</a>
+				</div>
+			</div>
+		</form>							
 	</div>
+</div>
 
 
 	<script type="text/javascript">
@@ -62,7 +59,6 @@
 		$('#postcodeCheck .btn').on('click', function () {
 	
           $('#postcodeCheck').parsley().validate();
-          //$('#parsley-error-message').toggle()
         });		
 	
 	});
